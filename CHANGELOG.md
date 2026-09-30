@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `.claude/settings.json`: allowlists the repo's `make` lint/verify targets
   and disables MCP servers by default (`enableAllProjectMcpServers: false`,
   `disableClaudeAiConnectors: true`) — this repo doesn't use any.
+- `CLAUDE.md` gotchas: `org` has no default in `copier.yml`, the
+  changelog-cut-before-tagging step, and the `.claude/settings.json`
+  MCP/permissions convention.
 
 ### Changed
 

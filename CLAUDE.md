@@ -44,9 +44,13 @@ Each `.github/workflows/*.yml` just installs the relevant tool and calls the mat
 
 Pushing a tag matching `v*` (e.g. `v1.1.0`) triggers `.github/workflows/release.yml`, which creates a GitHub Release whose body is pulled straight from the matching `## [x.y.z]` section of `CHANGELOG.md` via `make release-notes VERSION=v1.1.0` (backed by `scripts/changelog-entry.sh`). Keep `CHANGELOG.md` up to date — an unmatched version produces an empty release body.
 
+Before tagging: move `## [Unreleased]` entries into a new `## [x.y.z] - YYYY-MM-DD` section and push that to `main` first — the tag must point at a commit whose changelog already has the matching section.
+
 ## Gotchas
 
+- `org` in `copier.yml` has no default — always pass `--data org=...` (or answer the prompt) when running `copier copy`, even with `--defaults`.
 - `REPOS_DIR` in `workspace.conf.jinja` defaults to `"repos"` — if you change it, also update the corresponding entry in `template/.gitignore`.
 - `bootstrap.sh` auto-detects and excludes the workspace repo itself from cloning (via `git remote get-url origin`); don't add manual handling for that case.
 - `uvx copier update` refuses to run against a workspace with uncommitted changes.
 - All user-facing text (prompts, comments, docs) is English; keep new content in English.
+- `.claude/settings.json` disables MCP servers by default (`enableAllProjectMcpServers: false`, `disableClaudeAiConnectors: true`) — this repo intentionally uses none. It also allowlists the `make` lint/verify targets; add new safe, argument-free `make` targets there too.
