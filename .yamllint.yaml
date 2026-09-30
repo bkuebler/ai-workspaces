@@ -1,0 +1,10 @@
+extends: default
+
+rules:
+  document-start: disable
+  # GitHub Actions uses bare `on:` / `true`/`false`, which trips YAML 1.1
+  # truthy detection under the default ruleset.
+  truthy:
+    check-keys: false
+  line-length:
+    max: 100

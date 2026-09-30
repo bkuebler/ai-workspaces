@@ -18,7 +18,7 @@ GH_ARGS=(--limit "$LIMIT" --json name --jq '.[].name')
 case "$CLONE_PROTOCOL" in
   ssh)   BASE_URL="git@github.com:$ORG" ;;
   https) BASE_URL="https://github.com/$ORG" ;;
-  *) echo "Unbekanntes CLONE_PROTOCOL: $CLONE_PROTOCOL" >&2; exit 1 ;;
+  *) echo "Unknown CLONE_PROTOCOL: $CLONE_PROTOCOL" >&2; exit 1 ;;
 esac
 
 REPOS=$(gh repo list "$ORG" "${GH_ARGS[@]}")

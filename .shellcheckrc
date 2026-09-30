@@ -1,0 +1,3 @@
+# SC1091: bootstrap.sh sources workspace.conf / workspace.local.conf, which
+# only exist after the Copier template is rendered — not at lint time.
+disable=SC1091

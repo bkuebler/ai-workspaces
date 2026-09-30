@@ -3,38 +3,37 @@ _min_copier_version: "9.0.0"
 
 org:
   type: str
-  help: GitHub-Organisation
-  default: kai-forge
-  validator: "{% if not org %}Bitte eine Organisation angeben{% endif %}"
+  help: GitHub organization
+  validator: "{% if not org %}Please provide an organization{% endif %}"
 
 clone_protocol:
   type: str
-  help: Klon-Protokoll
+  help: Clone protocol
   choices: [ssh, https]
   default: ssh
 
 topic:
   type: str
-  help: Nur Repos mit diesem GitHub-Topic (leer = alle)
+  help: Only repos with this GitHub topic (empty = all)
   default: ""
 
 exclude:
   type: str
-  help: Auszuschließende Repos, durch Leerzeichen getrennt
+  help: Repos to exclude, separated by spaces
   default: ".github workspace-template"
 
 skip_archived:
   type: bool
-  help: Archivierte Repos überspringen?
+  help: Skip archived repos?
   default: true
 
 skip_forks:
   type: bool
-  help: Forks überspringen?
+  help: Skip forks?
   default: true
 
 update_mode:
   type: str
-  help: Verhalten bei vorhandenen Repos
+  help: Behavior for repos that already exist
   choices: [fetch, pull]
   default: fetch

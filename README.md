@@ -23,4 +23,3 @@ gh repo create MYORG/mynew-workspace --private --source . --push
 ```bash
 uvx copier update   # workspace must have no uncommited changes
 ```
-

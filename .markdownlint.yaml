@@ -1,0 +1,11 @@
+default: true
+
+# Prose lines aren't wrapped to a fixed width in this repo.
+MD013: false
+
+# SKILL.md files lead with YAML frontmatter, not an H1.
+MD041: false
+
+# CHANGELOG.md repeats headings like "### Added" under each version.
+MD024:
+  siblings_only: true
