@@ -1,0 +1,19 @@
+# {{ org }}: Workspace
+
+This repository does not contain any product code. It is a overview about
+all active repositories of the organization. All repositories are available
+below `./repos/` and will be cloned/updated via `./bootstrap.sh`.
+
+## Repositories
+<!-- For each repository one line: Name – Usage, Language, Dependencies -->
+- example-service – …
+
+## Dependencies
+<!-- z.B. web-frontend → api-gateway → {auth, billing} -->
+
+## Rules for cross-repository changes
+- Every repository below repos/ is its own git repository
+- Execute git commands always in those repositories
+- For each repository create a own branch and PR
+- Order: Contract → Provider → Consumer
+- Architecture Details: docs/architecture.md

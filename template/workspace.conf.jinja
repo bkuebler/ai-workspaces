@@ -1,0 +1,12 @@
+# workspace.conf: Settings for bootstrap.sh
+# Personal adjustments shall be added into workspace.local.conf
+
+ORG="{{ org }}"
+REPOS_DIR="repos"                       # if changed also adjust .gitignore
+CLONE_PROTOCOL="{{ clone_protocol }}"   # ssh | https
+LIMIT=200
+SKIP_ARCHIVED={{ "true" if skip_archived else "false" }}
+SKIP_FORKS={{ "true" if skip_forks else "false" }}
+TOPIC="{{ topic }}"                     # empty = all repositories
+EXCLUDE=({{ exclude }})                 # the workspace repo itself is automatically excluded
+UPDATE_MODE="{{ update_mode }}"         # fetch | pull

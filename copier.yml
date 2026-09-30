@@ -1,0 +1,40 @@
+_subdirectory: template
+_min_copier_version: "9.0.0"
+
+org:
+  type: str
+  help: GitHub-Organisation
+  default: kai-forge
+  validator: "{% if not org %}Bitte eine Organisation angeben{% endif %}"
+
+clone_protocol:
+  type: str
+  help: Klon-Protokoll
+  choices: [ssh, https]
+  default: ssh
+
+topic:
+  type: str
+  help: Nur Repos mit diesem GitHub-Topic (leer = alle)
+  default: ""
+
+exclude:
+  type: str
+  help: Auszuschließende Repos, durch Leerzeichen getrennt
+  default: ".github workspace-template"
+
+skip_archived:
+  type: bool
+  help: Archivierte Repos überspringen?
+  default: true
+
+skip_forks:
+  type: bool
+  help: Forks überspringen?
+  default: true
+
+update_mode:
+  type: str
+  help: Verhalten bei vorhandenen Repos
+  choices: [fetch, pull]
+  default: fetch
