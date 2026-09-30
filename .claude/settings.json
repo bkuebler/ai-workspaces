@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make check)",
+      "Bash(make lint)",
+      "Bash(make lint-shell)",
+      "Bash(make lint-yaml)",
+      "Bash(make lint-markdown)",
+      "Bash(make verify-template)",
+      "Bash(make release-notes *)"
+    ]
+  },
+  "enableAllProjectMcpServers": false,
+  "disableClaudeAiConnectors": true
+}

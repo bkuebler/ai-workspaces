@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `README.md` section documenting the release/versioning process.
 - `LICENSE` (MIT).
 - `README.md` Prerequisites section listing `git`, `gh`, and `uv`.
+- `.claude/settings.json`: allowlists the repo's `make` lint/verify targets
+  and disables MCP servers by default (`enableAllProjectMcpServers: false`,
+  `disableClaudeAiConnectors: true`) — this repo doesn't use any.
 
 ### Changed
 
