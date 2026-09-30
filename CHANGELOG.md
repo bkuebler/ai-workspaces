@@ -13,6 +13,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `LICENSE` (MIT).
 - `README.md` Prerequisites section listing `git`, `gh`, and `uv`.
 
+### Changed
+
+- `gh` marked optional in the README Prerequisites section, noting
+  `bootstrap.sh` is GitHub-specific today with Gitea/Forgejo/GitLab
+  support planned.
+
 ## [1.1.0] - 2026-09-30
 
 ### Added

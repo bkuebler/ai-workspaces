@@ -12,6 +12,9 @@ information across multiple repositories more structured.
 
 - [`git`](https://git-scm.com/downloads)
 - [`gh`](https://cli.github.com/) (GitHub CLI), authenticated (`gh auth login`)
+  — optional: only needed if your forge is GitHub, since `bootstrap.sh`
+  currently talks to GitHub via `gh`. Other forges (Gitea, Forgejo, GitLab)
+  are on the roadmap.
 - [`uv`](https://docs.astral.sh/uv/getting-started/installation/), which
   provides `uvx`:
 
