@@ -51,3 +51,7 @@ To cut a release:
 
 Run `make check` before tagging to make sure shellcheck, yamllint,
 markdownlint, and the template render all pass.
+
+## License
+
+[MIT](LICENSE)

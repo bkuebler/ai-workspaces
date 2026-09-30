@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - `README.md` section documenting the release/versioning process.
+- `LICENSE` (MIT).
 
 ## [1.1.0] - 2026-09-30
 
