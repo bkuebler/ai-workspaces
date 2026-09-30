@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-09-30
+
 ### Added
 
 - `CLAUDE.md` with repo overview, layout, commands, and gotchas for Claude Code.
@@ -41,5 +43,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   workspaces: `copier.yml` prompts, and `template/` with `bootstrap.sh`,
   `workspace.conf.jinja`, and `CLAUDE.md.jinja`.
 
-[Unreleased]: https://github.com/bkuebler/ai-workspaces/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/bkuebler/ai-workspaces/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/bkuebler/ai-workspaces/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/bkuebler/ai-workspaces/releases/tag/v1.0.0
