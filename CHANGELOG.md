@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `gh` marked optional in the README Prerequisites section, noting
   `bootstrap.sh` is GitHub-specific today with Gitea/Forgejo/GitLab
-  support planned.
+  support planned (tracked in [#1]).
 
 ## [1.1.0] - 2026-09-30
 
@@ -55,6 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   workspaces: `copier.yml` prompts, and `template/` with `bootstrap.sh`,
   `workspace.conf.jinja`, and `CLAUDE.md.jinja`.
 
+[#1]: https://github.com/bkuebler/ai-workspaces/issues/1
 [Unreleased]: https://github.com/bkuebler/ai-workspaces/compare/v1.1.0...HEAD
 [1.1.0]: https://github.com/bkuebler/ai-workspaces/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/bkuebler/ai-workspaces/releases/tag/v1.0.0
