@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `README.md` section documenting the release/versioning process.
 - `LICENSE` (MIT).
+- `README.md` Prerequisites section listing `git`, `gh`, and `uv`.
 
 ## [1.1.0] - 2026-09-30
 

@@ -8,6 +8,17 @@ will help to keep existing small repositories for every software asset, config
 and so on, but give the tool the ability to search required additional domain
 information across multiple repositories more structured.
 
+## Prerequisites
+
+- [`git`](https://git-scm.com/downloads)
+- [`gh`](https://cli.github.com/) (GitHub CLI), authenticated (`gh auth login`)
+- [`uv`](https://docs.astral.sh/uv/getting-started/installation/), which
+  provides `uvx`:
+
+  ```bash
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+  ```
+
 ## Create a new workspace
 
 ```bash
